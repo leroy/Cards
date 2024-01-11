@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cwie3y8u7ccit"]
+
+[ext_resource type="Script" path="res://src/Nodes/Hand.cs" id="1_fapsr"]
+
+[node name="Hand" type="Node2D"]
+script = ExtResource("1_fapsr")
+
+[node name="Cards" type="Node2D" parent="."]

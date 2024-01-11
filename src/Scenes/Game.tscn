@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://dkpkm2l12krme"]
+
+[ext_resource type="Script" path="res://src/Scenes/Game.cs" id="1_wy3rw"]
+[ext_resource type="PackedScene" uid="uid://cwie3y8u7ccit" path="res://src/Nodes/Hand.tscn" id="3_jyqe5"]
+[ext_resource type="PackedScene" uid="uid://br42slqmnyaxg" path="res://src/Nodes/Pot.tscn" id="4_r518r"]
+[ext_resource type="PackedScene" uid="uid://du2erw3ji5m0l" path="res://src/Nodes/GameManager.tscn" id="4_x43wy"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_wy3rw")
+
+[node name="Hand" parent="." instance=ExtResource("3_jyqe5")]
+position = Vector2(373, 469)
+
+[node name="GameManager" parent="." node_paths=PackedStringArray("PlayerHand") instance=ExtResource("4_x43wy")]
+PlayerHand = NodePath("../Hand")
+
+[node name="Pot" parent="." instance=ExtResource("4_r518r")]
+position = Vector2(514, 260)

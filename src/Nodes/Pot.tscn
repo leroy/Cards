@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://br42slqmnyaxg"]
+
+[ext_resource type="Script" path="res://src/Nodes/Pot.cs" id="1_d013x"]
+
+[node name="Pot" type="Node2D"]
+script = ExtResource("1_d013x")
